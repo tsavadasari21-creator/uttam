@@ -1,472 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Uttam Prasad Dhakal | Engineering Leader – Infographic Resume</title>
-  <!-- Google Fonts & Font Awesome Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Rajeev Reddy Kallam | ADAS Validation Engineer – Portfolio</title>
+    <!-- Google Fonts + Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      background: linear-gradient(145deg, #eef2f7 0%, #d9e0e8 100%);
-      font-family: 'Inter', sans-serif;
-      color: #1a2c3e;
-      padding: 40px 24px;
-    }
+        body {
+            background: #f0f4f9;
+            font-family: 'Inter', sans-serif;
+            color: #1e2f3e;
+            line-height: 1.5;
+            padding: 2rem 1.5rem;
+        }
 
-    /* main infographic container */
-    .infographic-container {
-      max-width: 1300px;
-      margin: 0 auto;
-      background: #ffffff;
-      border-radius: 48px;
-      box-shadow: 0 25px 45px -12px rgba(0,0,0,0.25);
-      overflow: hidden;
-      transition: all 0.2s ease;
-    }
+        .portfolio-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.2s;
+        }
 
-    /* header / hero area */
-    .hero {
-      background: linear-gradient(135deg, #0B2B40 0%, #1C4E6F 100%);
-      padding: 2rem 2.5rem 2rem 2.5rem;
-      color: white;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1.5rem;
-    }
+        /* header / hero section */
+        .hero {
+            background: linear-gradient(125deg, #0a2b38 0%, #123f4f 100%);
+            padding: 2.5rem 2.5rem;
+            color: white;
+        }
 
-    .hero-info h1 {
-      font-size: 2.8rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.4rem;
-    }
-    .hero-info .tagline {
-      font-size: 1.1rem;
-      font-weight: 400;
-      opacity: 0.85;
-      border-left: 3px solid #FFB347;
-      padding-left: 1rem;
-      margin-top: 0.25rem;
-    }
-    .contact-details {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin-top: 1rem;
-      font-size: 0.9rem;
-      background: rgba(255,255,255,0.12);
-      padding: 0.8rem 1.2rem;
-      border-radius: 60px;
-      backdrop-filter: blur(2px);
-    }
-    .contact-details i {
-      margin-right: 8px;
-      color: #FFB347;
-      width: 1.2rem;
-    }
-    .contact-details a {
-      color: white;
-      text-decoration: none;
-      transition: 0.2s;
-    }
-    .contact-details a:hover { color: #FFB347; }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.3rem;
+        }
 
-    .hero-badge {
-      background: rgba(255,255,255,0.1);
-      border-radius: 32px;
-      padding: 0.8rem 1.8rem;
-      text-align: center;
-      backdrop-filter: blur(4px);
-    }
-    .hero-badge .badge-title {
-      font-size: 0.8rem;
-      font-weight: 500;
-      letter-spacing: 1px;
-    }
-    .hero-badge .gpa {
-      font-size: 2rem;
-      font-weight: 800;
-      line-height: 1;
-    }
+        .hero-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+            opacity: 0.9;
+            border-left: 4px solid #ffb347;
+            padding-left: 1rem;
+            margin-top: 0.25rem;
+        }
 
-    /* main grid */
-    .main-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.8fr;
-      gap: 0;
-      border-top: 1px solid #e9edf2;
-    }
+        .hero-sub {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin-top: 1.5rem;
+            background: rgba(255,255,255,0.08);
+            padding: 0.8rem 1.2rem;
+            border-radius: 60px;
+            backdrop-filter: blur(2px);
+            font-size: 0.9rem;
+        }
 
-    /* left column (profile, skills, education) */
-    .left-panel {
-      background: #fafcff;
-      padding: 2rem 1.8rem;
-      border-right: 1px solid #eef2f8;
-    }
+        .hero-sub i {
+            margin-right: 8px;
+            color: #ffb347;
+        }
 
-    .section {
-      margin-bottom: 2rem;
-    }
-    .section-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #1C4E6F;
-      border-bottom: 3px solid #FFB347;
-      display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 1.2rem;
-    }
-    .about-text {
-      font-size: 0.9rem;
-      line-height: 1.5;
-      color: #2c3e4e;
-      margin-bottom: 1rem;
-    }
+        .hero-sub a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero-sub a:hover { text-decoration: underline; }
 
-    /* skill tags */
-    .skills-cloud {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-bottom: 1rem;
-    }
-    .skill-tag {
-      background: #eef2fa;
-      padding: 0.3rem 1rem;
-      border-radius: 40px;
-      font-size: 0.75rem;
-      font-weight: 500;
-      color: #1C4E6F;
-      transition: all 0.2s;
-    }
-    .skill-tag i {
-      margin-right: 5px;
-      font-size: 0.7rem;
-      color: #FFB347;
-    }
+        /* main grid */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 0;
+        }
 
-    .skill-category {
-      margin: 1rem 0 0.5rem 0;
-      font-weight: 700;
-      font-size: 0.85rem;
-      color: #0f3b4f;
-    }
+        /* left sidebar */
+        .sidebar {
+            background: #fafcff;
+            border-right: 1px solid #e5ecf3;
+            padding: 2rem 1.8rem;
+        }
 
-    .edu-item {
-      margin-bottom: 1rem;
-    }
-    .edu-item h4 {
-      font-weight: 700;
-      font-size: 1rem;
-    }
-    .edu-item .meta {
-      font-size: 0.8rem;
-      color: #5f7f9c;
-      margin: 0.2rem 0;
-    }
+        .section {
+            margin-bottom: 2rem;
+        }
 
-    .cert-badge {
-      background: #eef2fa;
-      border-radius: 20px;
-      padding: 0.4rem 1rem;
-      display: inline-block;
-      font-size: 0.8rem;
-      font-weight: 500;
-      margin-top: 0.5rem;
-    }
+        .section-title {
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #0f5b6e;
+            border-bottom: 3px solid #ffb347;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 1.2rem;
+        }
 
-    /* right panel */
-    .right-panel {
-      padding: 2rem 2rem;
-      background: white;
-    }
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 0.5rem;
+        }
 
-    .exp-card {
-      margin-bottom: 1.8rem;
-      border-left: 4px solid #FFB347;
-      padding-left: 1.2rem;
-      transition: 0.1s;
-    }
-    .exp-title {
-      font-weight: 800;
-      font-size: 1.05rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .exp-company {
-      color: #1C4E6F;
-      font-weight: 700;
-    }
-    .exp-date {
-      font-size: 0.7rem;
-      font-weight: 500;
-      background: #eef2fa;
-      padding: 0.2rem 0.8rem;
-      border-radius: 30px;
-      color: #2c5a77;
-    }
-    .exp-desc {
-      font-size: 0.85rem;
-      line-height: 1.45;
-      margin-top: 0.5rem;
-      color: #2c3e4e;
-    }
-    .highlight {
-      background: #fff2e0;
-      padding: 0 4px;
-      border-radius: 6px;
-      font-weight: 600;
-      color: #c16f1a;
-    }
+        .skill-badge {
+            background: #eef2fa;
+            padding: 0.4rem 1.1rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #1c5a70;
+            transition: all 0.2s;
+        }
 
-    /* reflection / change management block */
-    .reflection-block {
-      margin-top: 2rem;
-      background: #F5F9FF;
-      border-radius: 28px;
-      padding: 1.5rem 1.8rem;
-      border: 1px solid #e2ebf3;
-    }
-    .reflection-title {
-      font-weight: 800;
-      font-size: 1.2rem;
-      margin-bottom: 0.8rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: #0B2B40;
-    }
-    .reflection-text {
-      font-size: 0.88rem;
-      line-height: 1.55;
-      color: #2c4e6e;
-    }
+        .skill-badge i {
+            margin-right: 6px;
+            font-size: 0.75rem;
+            color: #ffb347;
+        }
 
-    /* metrics mini visual */
-    .metric-row {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin: 1rem 0 0.5rem;
-    }
-    .metric-pill {
-      background: #eef2fa;
-      border-radius: 40px;
-      padding: 0.2rem 1rem;
-      font-size: 0.8rem;
-      font-weight: 500;
-    }
+        .contact-info p {
+            margin: 0.7rem 0;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
 
-    hr {
-      margin: 1rem 0;
-      border: 0;
-      height: 1px;
-      background: #e2e8f0;
-    }
+        .contact-info i {
+            width: 1.4rem;
+            color: #ffb347;
+            font-size: 1rem;
+        }
 
-    /* responsive */
-    @media (max-width: 880px) {
-      .main-grid {
-        grid-template-columns: 1fr;
-      }
-      .left-panel {
-        border-right: 0;
-        border-bottom: 1px solid #eef2f8;
-      }
-      .hero {
-        flex-direction: column;
-        align-items: start;
-      }
-      .hero-info h1 {
-        font-size: 2rem;
-      }
-    }
+        .edu-item {
+            margin-bottom: 1.3rem;
+        }
+        .edu-item h4 {
+            font-weight: 800;
+            font-size: 1rem;
+        }
+        .edu-meta {
+            font-size: 0.8rem;
+            color: #5f7f9c;
+            margin-top: 0.2rem;
+        }
 
-    footer {
-      background: #f8fafd;
-      text-align: center;
-      font-size: 0.7rem;
-      padding: 1rem;
-      border-top: 1px solid #eef2f8;
-      color: #6c86a3;
-    }
-    i.fa, i.far, i.fas {
-      width: 1.2rem;
-    }
-  </style>
+        /* right content */
+        .content {
+            padding: 2rem 2rem;
+            background: white;
+        }
+
+        .insight-card {
+            background: #fef8ef;
+            border-radius: 1.5rem;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 2rem;
+            border-left: 6px solid #ffb347;
+        }
+        .insight-title {
+            font-weight: 800;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #1e2f3e;
+            margin-bottom: 0.5rem;
+        }
+        .insight-text {
+            font-size: 0.9rem;
+            color: #2c4e6e;
+        }
+
+        /* strategy grid (4 elements) */
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 1.2rem;
+            margin: 1.5rem 0 1rem;
+        }
+        .strategy-card {
+            background: #f9fbfe;
+            border-radius: 1.2rem;
+            padding: 1.1rem;
+            border: 1px solid #e6edf4;
+            transition: 0.2s;
+        }
+        .strategy-card h3 {
+            font-size: 1rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: #123f4f;
+        }
+        .strategy-card p {
+            font-size: 0.8rem;
+            color: #2c5a77;
+            margin-top: 0.3rem;
+        }
+        .example-text {
+            font-size: 0.75rem;
+            color: #7a8e9e;
+            margin-top: 0.6rem;
+            border-top: 1px dashed #dce5ef;
+            padding-top: 0.5rem;
+        }
+
+        .exp-item {
+            margin-bottom: 1.5rem;
+            border-left: 3px solid #ffb347;
+            padding-left: 1.2rem;
+        }
+        .exp-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 800;
+            font-size: 1rem;
+        }
+        .exp-company {
+            color: #0f5b6e;
+        }
+        .exp-date {
+            font-size: 0.7rem;
+            background: #eef2fa;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+        .exp-desc {
+            font-size: 0.85rem;
+            margin-top: 0.4rem;
+            color: #2c3e50;
+        }
+
+        hr {
+            margin: 1rem 0;
+            border: none;
+            height: 1px;
+            background: #e2e8f0;
+        }
+
+        @media (max-width: 800px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid #e5ecf3;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        footer {
+            background: #f8fafd;
+            text-align: center;
+            font-size: 0.7rem;
+            padding: 1rem;
+            border-top: 1px solid #eef2f8;
+            color: #6c86a3;
+        }
+        i.fa, i.far, i.fas {
+            margin-right: 4px;
+        }
+    </style>
 </head>
 <body>
-<div class="infographic-container">
-  <!-- hero header -->
-  <div class="hero">
-    <div class="hero-info">
-      <h1>Uttam Prasad Dhakal</h1>
-      <div class="tagline">Mechanical Engineer · R&D · Process Excellence · Lean Champion</div>
-      <div class="contact-details">
-        <span><i class="fas fa-phone-alt"></i> 320-493-1975</span>
-        <span><i class="fas fa-envelope"></i> <a href="mailto:dhakaluttam98@gmail.com">dhakaluttam98@gmail.com</a></span>
-        <span><i class="fab fa-linkedin"></i> <a href="#">linkedin.com/in/uttam-d</a></span>
-      </div>
-    </div>
-    <div class="hero-badge">
-      <div class="badge-title">B.S. Mechanical Eng.</div>
-      <div class="gpa">3.38 <span style="font-size:1rem;">Cum Laude</span></div>
-      <div><i class="fas fa-certificate"></i> CSWA · Mechanical Design</div>
-    </div>
-  </div>
-
-  <div class="main-grid">
-    <!-- LEFT COLUMN: about, core skills, education -->
-    <div class="left-panel">
-      <div class="section">
-        <div class="section-title"><i class="fas fa-user-astronaut" style="margin-right: 8px;"></i> About me</div>
-        <div class="about-text">
-          Mechanical Engineer with expertise in R&D, manufacturing, prototyping, and processes. Skilled in reducing defects, leading projects, and improving processes. Strong background in electro-mechanical assembly, design for manufacturability, and test method development. Familiar with FDA regulations, ISO standards, and risk analysis. Passionate about innovation and solving complex problems. Seeking to drive efficiency and quality in a dynamic engineering environment.
+<div class="portfolio-container">
+    <!-- Hero section -->
+    <div class="hero">
+        <h1>Rajeev Reddy Kallam</h1>
+        <div class="hero-title">Automotive Validation Engineer | Specializing in ADAS & Autonomous Vehicle Systems</div>
+        <div class="hero-sub">
+            <span><i class="fas fa-envelope"></i> rajeevraddy.kallam@gmail.com</span>
+            <span><i class="fas fa-phone-alt"></i> +1 248-346-6739</span>
+            <span><i class="fas fa-map-marker-alt"></i> Detroit Metro Area</span>
         </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title"><i class="fas fa-cogs"></i> Core Skills</div>
-        <div class="skill-category"><i class="fas fa-cube"></i> 3D & CAD</div>
-        <div class="skills-cloud">
-          <span class="skill-tag">SolidWorks</span>
-          <span class="skill-tag">Fusion 360</span>
-          <span class="skill-tag">GD&T</span>
-          <span class="skill-tag">BOM</span>
-          <span class="skill-tag">Design Verification</span>
-        </div>
-        <div class="skill-category"><i class="fas fa-chart-line"></i> Lean & Manufacturing</div>
-        <div class="skills-cloud">
-          <span class="skill-tag">Lean Manufacturing</span>
-          <span class="skill-tag">5S</span>
-          <span class="skill-tag">Value Stream Mapping</span>
-          <span class="skill-tag">Root Cause Analysis</span>
-          <span class="skill-tag">CNC / Machining</span>
-          <span class="skill-tag">Metal Casting / Welding</span>
-          <span class="skill-tag">3D Printing</span>
-        </div>
-        <div class="skill-category"><i class="fas fa-microchip"></i> Tools & Software</div>
-        <div class="skills-cloud">
-          <span class="skill-tag">MATLAB</span>
-          <span class="skill-tag">Minitab</span>
-          <span class="skill-tag">Arduino</span>
-          <span class="skill-tag">Project Management</span>
-          <span class="skill-tag">Testing & Validation</span>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title"><i class="fas fa-graduation-cap"></i> Education</div>
-        <div class="edu-item">
-          <h4>M.S. Engineering Management</h4>
-          <div class="meta">Trine University · Anticipated 2026</div>
-        </div>
-        <div class="edu-item">
-          <h4>B.S. Mechanical Engineering</h4>
-          <div class="meta">St. Cloud State University · GPA 3.38 · Cum Laude</div>
-        </div>
-        <div class="cert-badge"><i class="fas fa-certificate"></i> CSWA - Mechanical Design Certificate</div>
-      </div>
-
-      <div class="section">
-        <div class="section-title"><i class="fas fa-chart-simple"></i> Key Achievements</div>
-        <div class="metric-row">
-          <span class="metric-pill"><i class="fas fa-chart-line"></i> ↓15% defects (R&D)</span>
-          <span class="metric-pill"><i class="fas fa-clock"></i> Lean time savings</span>
-          <span class="metric-pill"><i class="fas fa-check-circle"></i> FAI & IR lead</span>
-        </div>
-      </div>
     </div>
 
-    <!-- RIGHT COLUMN: experience + change management reflection -->
-    <div class="right-panel">
-      <div class="section">
-        <div class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</div>
-        
-        <div class="exp-card">
-          <div class="exp-title">
-            <span class="exp-company">Manufacturing Engineering Technician</span>
-            <span class="exp-date">Nov 2024 – Present</span>
-          </div>
-          <div class="exp-desc"><strong>Car Fair Composites Inc (NFI Group)</strong> — St. Cloud, MN<br>
-          Provide production floor support, design tooling, implement lean initiatives saving production time. Perform First Article Inspections (FAI) on new & modified parts, lead root cause analysis for approved IRs, validate cost savings.
-          </div>
+    <div class="main-grid">
+        <!-- Left sidebar: Skills, Education, Contact -->
+        <div class="sidebar">
+            <div class="section">
+                <div class="section-title"><i class="fas fa-microchip"></i> Technical Skills</div>
+                <div class="skill-list">
+                    <span class="skill-badge"><i class="fas fa-tachometer-alt"></i> dSPACE</span>
+                    <span class="skill-badge"><i class="fas fa-code-branch"></i> Vector CANoe</span>
+                    <span class="skill-badge"><i class="fas fa-car"></i> ABDynamics</span>
+                    <span class="skill-badge"><i class="fas fa-robot"></i> 4active</span>
+                </div>
+                <div class="skill-list" style="margin-top: 12px;">
+                    <span class="skill-badge"><i class="fas fa-chart-line"></i> HIL Testing</span>
+                    <span class="skill-badge"><i class="fas fa-project-diagram"></i> ADAS Validation</span>
+                    <span class="skill-badge"><i class="fas fa-gavel"></i> ISO 26262</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title"><i class="fas fa-graduation-cap"></i> Education</div>
+                <div class="edu-item">
+                    <h4>M.S. Engineering Management</h4>
+                    <div class="edu-meta">Trine University · Ongoing</div>
+                </div>
+                <div class="edu-item">
+                    <h4>M.S. Automotive Engineering</h4>
+                    <div class="edu-meta">Lawrence Technological University</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title"><i class="fas fa-address-card"></i> Contact</div>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> rajeevraddy.kallam@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i> +1 248-346-6739</p>
+                    <p><i class="fab fa-linkedin"></i> linkedin.com/in/rajeev-kallam</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title"><i class="fas fa-certificate"></i> Core Focus</div>
+                <div class="skill-list">
+                    <span class="skill-badge"><i class="fas fa-eye"></i> ADAS/ADS</span>
+                    <span class="skill-badge"><i class="fas fa-vial"></i> Validation Strategy</span>
+                    <span class="skill-badge"><i class="fas fa-chalkboard-user"></i> Change Management</span>
+                </div>
+            </div>
         </div>
 
-        <div class="exp-card">
-          <div class="exp-title">
-            <span class="exp-company">Development Engineer</span>
-            <span class="exp-date">Apr 2024 – Oct 2024</span>
-          </div>
-          <div class="exp-desc"><strong>Ethicon Endo-Surgery (J&J)</strong> — Blue Ash, OH<br>
-          Supported design and development of endoscopic cutter device, optimized manufacturing process, ensured design for manufacturability.
-          </div>
-        </div>
+        <!-- Right content: Core insights, Strategy, Experience -->
+        <div class="content">
+            <!-- Core Insights block -->
+            <div class="insight-card">
+                <div class="insight-title">
+                    <i class="fas fa-lightbulb" style="color:#ffb347;"></i> Core Insights
+                </div>
+                <div class="insight-text">
+                    <strong>Aligning Strategy with Leadership:</strong> Drives successful engineering processes by ensuring all team members work toward a unified goal.<br>
+                    <strong>Effective Change Management:</strong> Smooth adoption of new tools and practices while maintaining productivity and team cohesion.
+                </div>
+            </div>
 
-        <div class="exp-card">
-          <div class="exp-title">
-            <span class="exp-company">R&D Engineer</span>
-            <span class="exp-date">June 2022 – Mar 2024</span>
-          </div>
-          <div class="exp-desc"><strong>Boston Scientific</strong> — Maple Grove, MN<br>
-          Led development of cycling corablation catheter, <span class="highlight">reducing defects by 15%</span>. Collaborated on test method development, design verification, and risk analysis (ISO/FDA).
-          </div>
-        </div>
+            <!-- Key Elements of Strategy and Change -->
+            <div class="section" style="margin-bottom: 0.5rem;">
+                <div class="section-title"><i class="fas fa-chart-line"></i> Key Elements of Strategy & Change</div>
+            </div>
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <h3><i class="fas fa-flag-checkered"></i> Strategic</h3>
+                    <p>Clear vision and strategic goals</p>
+                    <div class="example-text"><i class="fas fa-check-circle"></i> Developed and executed ADAS test procedures, ensuring alignment with overall organizational strategy.</div>
+                </div>
+                <div class="strategy-card">
+                    <h3><i class="fas fa-users"></i> Leadership</h3>
+                    <p>Guiding teams through change</p>
+                    <div class="example-text"><i class="fas fa-check-circle"></i> Successfully led teams in adopting the DSpace toolchain, ensuring smooth transition and minimizing disruptions.</div>
+                </div>
+                <div class="strategy-card">
+                    <h3><i class="fas fa-clipboard-list"></i> Planning</h3>
+                    <p>Guiding visions and strategic goals</p>
+                    <div class="example-text"><i class="fas fa-check-circle"></i> Planned and implemented engineering changes in test procedures for ADAS and autonomous vehicle systems, meeting strategic objectives.</div>
+                </div>
+                <div class="strategy-card">
+                    <h3><i class="fas fa-comments"></i> Communication</h3>
+                    <p>Efficient cross-team collaboration</p>
+                    <div class="example-text"><i class="fas fa-check-circle"></i> Ensured clear communication across various engineering teams, promoting alignment and knowledge sharing.</div>
+                </div>
+            </div>
 
-        <div class="exp-card">
-          <div class="exp-title">
-            <span class="exp-company">Senior Design Project Lead</span>
-            <span class="exp-date">Aug 2021 – May 2022</span>
-          </div>
-          <div class="exp-desc"><strong>St. Cloud State University</strong><br>
-          Led a team designing a 3-axis CNC precision machine, used MATLAB to analyze design parameters, managed project timeline and technical documentation.
-          </div>
-        </div>
-      </div>
+            <!-- Experience -->
+            <div class="section">
+                <div class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</div>
+                
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <span class="exp-company">Ford Motors – HIL Test Engineer</span>
+                        <span class="exp-date">Oct 2024 – Present</span>
+                    </div>
+                    <div class="exp-desc">
+                        Hardware-in-the-loop (HIL) validation for ADAS features, developing test scenarios, and ensuring robust performance of autonomous driving functions. Collaborate with cross-functional teams to align validation strategies with Ford’s safety goals.
+                    </div>
+                </div>
 
-      <!-- Organizational Strategy & Change Management Reflection (Infographic style) -->
-      <div class="reflection-block">
-        <div class="reflection-title">
-          <i class="fas fa-chalkboard-user" style="color:#FFB347;"></i> 
-          Organizational Strategy & Change Management
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <span class="exp-company">Magna Electronics – System Test Engineer</span>
+                        <span class="exp-date">Sep 2022 – Sep 2024</span>
+                    </div>
+                    <div class="exp-desc">
+                        Designed and executed system-level test plans for radar and camera-based ADAS systems. Utilized Vector CANoe and dSPACE for validation, reduced regression test cycles by 20% through automation. Drove change management initiatives for new test toolchains.
+                    </div>
+                </div>
+            </div>
+
+            <!-- short summary of change management philosophy (aligning with portfolio theme) -->
+            <hr>
+            <div style="display: flex; gap: 1.2rem; flex-wrap: wrap; justify-content: space-between; font-size: 0.75rem; margin-top: 0.8rem;">
+                <div><i class="fas fa-car-side"></i> ADAS/AV validation expert</div>
+                <div><i class="fas fa-chalkboard"></i> Strategy & leadership fusion</div>
+                <div><i class="fas fa-chart-line"></i> Continuous process improvement</div>
+            </div>
+            <div style="margin-top: 1.2rem; background: #f4f9fe; border-radius: 1rem; padding: 0.8rem 1.2rem; font-size: 0.8rem; color: #1e5f74;">
+                <i class="fas fa-quote-left" style="margin-right: 8px; color: #ffb347;"></i> 
+                Seamless integration of strategy, leadership, and technical validation drives excellence in autonomous vehicle programs.
+            </div>
         </div>
-        <div class="reflection-text">
-          <p>In my CPT experience, I observed how aligning organizational strategy with effective leadership practices is essential to driving successful change. Leadership plays a pivotal role by fostering a clear vision, realistic goals, and transparent communication — ensuring strategies are executed efficiently while addressing both immediate needs and long-term objectives.</p>
-          <p style="margin-top: 12px;">Change management is not only about implementing new processes or technologies but also about managing the human side of change: motivating employees, providing support, and equipping teams to embrace new workflows. I contributed directly by supporting process improvements aligned with broader business strategies. <strong>Without strong leadership to execute and communicate the strategy, even the best-planned changes can fail.</strong> The insights reinforce that a unified approach is the foundation for achieving organizational growth and sustainability.</p>
-          <div class="metric-row" style="margin-top: 15px; justify-content: flex-start;">
-            <span class="metric-pill"><i class="fas fa-eye"></i> Vision alignment</span>
-            <span class="metric-pill"><i class="fas fa-comments"></i> Transparent communication</span>
-            <span class="metric-pill"><i class="fas fa-arrows-spin"></i> Lean transformation</span>
-          </div>
-        </div>
-      </div>
-      
-      <!-- additional data about innovation -->
-      <hr>
-      <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: space-between; font-size: 0.8rem; margin-top: 0.5rem;">
-        <div><i class="fas fa-flask"></i> R&D · Prototyping · DFM</div>
-        <div><i class="fas fa-chart-pie"></i> Root cause · FMEA</div>
-        <div><i class="fas fa-industry"></i> Lean 5S · VSM</div>
-      </div>
     </div>
-  </div>
-  <footer>
-    <i class="fas fa-chart-simple"></i> Infographic resume — Engineering Management perspective | Lean mindset & operational excellence
-  </footer>
+    <footer>
+        <i class="fas fa-chart-network"></i> Rajeev Reddy Kallam — ADAS Validation Engineer | Strategy-Driven Leadership & Change Management
+    </footer>
 </div>
 </body>
 </html>
